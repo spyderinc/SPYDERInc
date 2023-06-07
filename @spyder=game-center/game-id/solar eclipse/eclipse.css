@@ -1,0 +1,64 @@
+body {
+    background-color: white;
+    animation: dayToNight 10s infinite 1.5s;
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+}
+
+.sun {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background-color: #FCD25B;
+    border: 3px solid #FCD25B;
+    overflow: hidden;
+    animation: dayToNight2 10s infinite 1.5s;
+}
+
+.shadow {
+    height: 170px;
+    width: 170px;
+    border-radius: 50%;
+    background-color: white;
+    top: -5px;
+    left: 0px;
+    animation: moveShadow 10s infinite 1.5s;
+}
+
+@keyframes moveShadow {
+    0% {
+        transform: translateX(150px);
+        background-color: white;
+    }
+    50% {
+        transform: translateX(-10px);
+        background-color: black;
+    }
+    100% {
+        transform: translateX(-170px);
+        background-color: white;
+    }
+}
+
+@keyframes dayToNight {
+    0% {
+        background-color: white;
+    }
+    50% {
+        background-color: black;
+    }
+    100% {
+        background-color: white;
+    }
+}
+
+/*footer*/
+.footer{
+    margin-bottom: 100%, auto;
+}
