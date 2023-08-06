@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Generator @ SPYDER Inc</title>
+    <link rel="stylesheet" href="qr.css">
+    <link rel="website icon" type="png" href="https://img.icons8.com/?size=1x&id=fUXLLTKexZs2&format=png"> 
+</head>
+<body>
+    <div class="container">
+        <input type="text" id="text" placeholder="Enter text" class="input" />
+        <button type="button" onclick="generateQR()">
+        Generate QR
+    </button>
+    <div id="qr-image">
+        <span class="error"></span> <br />
+        <img src="" id="img" />
+    </div>
+    <p class="spyder-inc-qr-intro">Produced by: SPYDER Inc</p>
+    </div>
+    <script src="qr.js"></script>
+</body>
+</html>
